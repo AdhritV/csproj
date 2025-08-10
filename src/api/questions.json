@@ -1,0 +1,29 @@
+{
+  "Courses": {
+    "Algebra 1": {
+      "Unit 1: Linear Equations": {
+        "Lesson 1: One-Step Equations": [
+          {
+            "type": "answer-field-num",
+            "question": "Solve for [x]<br>[\\frac{x}{#a#} = #b#]",
+            "explanation":
+              "<br>1. Multiply both sides by [#a#]<br>[\\frac{x}{#a#} \\cdot #a# = #b# \\cdot #a#]<br><br>2. Simplify<br>[x = @#b# * #a#@]",
+            "variables": {
+              "a": {
+                "min": 1,
+                "max": 10
+              },
+              "b": {
+                "min": -10,
+                "max": 10
+              }
+            },
+            "answer_format": "<input type='number' id='user-answer' class='num-field' autocomplete='off' />",
+            "answer": "b * a",
+            "difficulty": 1.25
+          }
+        ]
+      }
+    }
+  }
+}

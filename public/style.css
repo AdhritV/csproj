@@ -1,0 +1,234 @@
+:root {
+  --prep: #090c12;
+  --pre: #0c1119;
+  --prim: #131925;
+  --sec: #1a202c;
+  --hover: #1a5275;
+}
+
+
+@font-face {
+  font-family: 'SSP';
+  src: url('./fonts/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+       url('./fonts/SourceSansPro-Regular.ttf.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap; /* optional but good for performance */
+}
+
+@font-face {
+  font-family: 'SSP';
+  src: url('./fonts/SourceSansPro-Semibold.ttf.woff2') format('woff2'),
+       url('./fonts/SourceSansPro-Semibold.ttf.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; /* optional but good for performance */
+}
+
+/* Apply to all elements */
+body {
+  background: var(--prim);
+  color: #fff;
+  font-family: 'SSP', sans-serif;
+  font-weight: 300;
+}
+
+.course-title {
+  display: flex;
+  justify-content: center;
+  background-color: var(--pre);
+  padding: 24px 0;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 32px;
+  border-radius: 0 0 100px 100px;
+}
+
+.title {
+  width: 80%;
+  max-width: 660px;
+  margin: 75px auto 0;
+}
+
+.title h1 {
+  color: #c2c2c2;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 0;
+}
+
+.title h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 0;
+}
+
+.quiz-container {
+  background: var(--sec);
+  width: 80%;
+  max-width: 600px;
+  margin: 50px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+  padding-top: 15px;
+}
+
+.quiz-container p {
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+.score h1 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 0;
+  display: inline;
+}
+
+.score h2 {
+  color: #9f9f9f;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 0;
+  display: inline;
+}
+
+.num-field {
+  background: var(--sec);
+  color: #fff;
+  font-family: 'SSP', sans-serif;
+  width: 10%;
+  max-width: 70px;
+  border-radius: 100px;
+  border: 1px solid #5d5f67;
+  padding: 10px;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.num-field.correct {
+  border-color: #1cff4d7d;
+  color: #1cff4d;
+}
+
+.num-field.incorrect {
+  border-color: #ff21217d;
+  color: #ff2121;
+}
+
+.next {
+  background: var(--sec);
+  color: #fff;
+  font-family: 'SSP', sans-serif;
+  font-weight: 600;
+  width: 20%;
+  max-width: 110px;
+  border-radius: 10px;
+  border: 1px solid var(--hover);
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 20px auto 0;
+  display: flex;
+  justify-content: center;
+}
+
+.next:hover {
+  background: var(--hover);
+}
+
+.menu-container {
+  background: var(--sec);
+  width: 60%;
+  max-width: 800px;
+  margin: 25px auto 0px;
+  border-radius: 10px;
+  padding: 30px;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'SSP', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+}
+
+.menu-container:hover {
+  background: var(--hover);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--prep);
+  padding: 0 20px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+
+.nav-list li a {
+  border-radius: 100px;
+  padding: 4px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.nav-list li a:hover {
+  background: var(--hover);
+}
+
+.menu-toggle {
+  padding: 8px 0;
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.menu-toggle:hover {
+  filter:brightness(0) saturate(100%) invert(20%) sepia(61%) saturate(1308%) hue-rotate(174deg) brightness(96%) contrast(82%);
+}
+
+@media (max-width: 540px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    align-items: end;
+    width: 100%;
+    background-color: var(--prep);
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items:end;
+    padding: 16px 32px;
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+}
