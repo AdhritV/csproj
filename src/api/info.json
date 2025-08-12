@@ -1,0 +1,12 @@
+{
+    "Courses": {
+      "Algebra 1": {
+        "Unit 1: Linear Equations": {
+            "desc": "hi"
+        },
+        "Unit 2: Non Linear Equations": {
+            "desc": "hello"
+        }
+      }
+    }
+  }

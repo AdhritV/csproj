@@ -8,17 +8,22 @@ export default function CourseList({ courses }) {
 
   return (
     <div id="menu">
-      <input
-        className="num-field"
-        placeholder="Search for a course..."
-        value={filter}
-        onChange={e => setFilter(e.target.value)}
-      />
+      {/* Title + Search in one line */}
+      <div className="course-list-header">
+        <h2 className="course-list-title">Courses</h2>
+        <input
+          className="num-field search"
+          placeholder="Search..."
+          value={filter}
+          onChange={e => setFilter(e.target.value)}
+        />
+      </div>
+
       {filtered.map(course => (
         <button
           key={course}
           className="menu-container"
-          onClick={() => navigate(`/quiz/${encodeURIComponent(course)}/Unit%201/Lesson%201`)}
+          onClick={() => navigate(`/course/${encodeURIComponent(course)}`)}
         >
           {course}
         </button>

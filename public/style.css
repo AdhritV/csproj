@@ -33,6 +33,21 @@ body {
   font-weight: 300;
 }
 
+.course-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* pushes title left, search right */
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.course-list-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+}
+
 .course-title {
   display: flex;
   justify-content: center;
@@ -107,6 +122,11 @@ body {
   transition: all 0.3s;
 }
 
+.search {
+  width: 80%;
+  max-width: 300px;
+}
+
 .num-field.correct {
   border-color: #1cff4d7d;
   color: #1cff4d;
@@ -158,6 +178,32 @@ body {
 
 .menu-container:hover {
   background: var(--hover);
+}
+
+.unit-container {
+  background: var(--sec);
+  width: 90%;
+  max-width: 800px;
+  margin: 25px auto 0px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0;
+}
+
+.unit-container-title {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 0;
+  display: flex;
+}
+
+.subtext {
+  color: #c2c2c2;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
 }
 
 .header {
