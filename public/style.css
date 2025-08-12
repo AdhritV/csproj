@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: 'SSP';
-  src: url('./fonts/SourceSansPro-Regular.ttf.woff2') format('woff2'),
-       url('./fonts/SourceSansPro-Regular.ttf.woff') format('woff');
+  src: url('/fonts/SourceSansPro-Regular.ttf.woff2') format('woff2'),
+       url('/fonts/SourceSansPro-Regular.ttf.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap; /* optional but good for performance */
@@ -18,8 +18,8 @@
 
 @font-face {
   font-family: 'SSP';
-  src: url('./fonts/SourceSansPro-Semibold.ttf.woff2') format('woff2'),
-       url('./fonts/SourceSansPro-Semibold.ttf.woff') format('woff');
+  src: url('/fonts/SourceSansPro-Semibold.ttf.woff2') format('woff2'),
+       url('/fonts/SourceSansPro-Semibold.ttf.woff') format('woff');
   font-weight: 600;
   font-style: normal;
   font-display: swap; /* optional but good for performance */
